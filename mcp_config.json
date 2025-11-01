@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+      "oran-analysis": {
+        "command": "python",
+        "args": ["mcp_server/oran_mcp_server.py"],
+        "description": "O-RAN configuration analysis and compatibility checking tools",
+        "capabilities": {
+          "tools": true,
+          "resources": true
+        }
+      }
+    }
+  }

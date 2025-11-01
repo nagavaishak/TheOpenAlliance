@@ -1,0 +1,35 @@
+{
+    "vendor": "Vendor_A",
+    "component": "O-DU",
+    "version": "1.0",
+    "interfaces": {
+      "F1": {
+        "protocol_version": "15.4.0",
+        "transport": "SCTP",
+        "ip_address": "192.168.1.100",
+        "port": 38472,
+        "timing": {
+          "t1_setup_timer": 5000,
+          "max_retries": 3
+        }
+      },
+      "open_fronthaul": {
+        "version": "7.0",
+        "plane_split": "7-2x",
+        "ecpri_version": "2.0",
+        "vlan_id": 100,
+        "pcp": 7,
+        "timing": {
+          "t2a_max": 285,
+          "t2a_min": 71,
+          "ta3_max": 300
+        }
+      }
+    },
+    "capabilities": {
+      "bandwidth": "100MHz",
+      "numerology": [0, 1],
+      "mimo_layers": 4,
+      "beamforming": true
+    }
+  }

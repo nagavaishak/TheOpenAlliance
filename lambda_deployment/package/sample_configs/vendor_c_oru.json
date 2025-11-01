@@ -1,0 +1,24 @@
+{
+    "vendor": "Vendor_C",
+    "component": "O-RU",
+    "version": "1.5",
+    "interfaces": {
+      "open_fronthaul": {
+        "version": "6.0",
+        "plane_split": "7-2x",
+        "ecpri_version": "1.0",
+        "vlan_id": 200,
+        "pcp": 7,
+        "timing": {
+          "t2a_max": 400,
+          "t2a_min": 100,
+          "ta3_max": 450
+        }
+      }
+    },
+    "capabilities": {
+      "bandwidth": "50MHz",
+      "frequency_range": "3.5GHz",
+      "beamforming": false
+    }
+  }

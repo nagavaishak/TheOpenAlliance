@@ -1,0 +1,31 @@
+{
+    "vendor": "Vendor_B",
+    "component": "O-RU",
+    "version": "2.1",
+    "interfaces": {
+      "open_fronthaul": {
+        "version": "7.0",
+        "plane_split": "7-2x",
+        "ecpri_version": "2.0",
+        "vlan_id": 100,
+        "pcp": 6,
+        "timing": {
+          "t2a_max": 250,
+          "t2a_min": 50,
+          "ta3_max": 280
+        }
+      },
+      "management": {
+        "protocol": "NETCONF",
+        "yang_version": "1.0",
+        "port": 830
+      }
+    },
+    "capabilities": {
+      "bandwidth": "100MHz",
+      "frequency_range": "3.5GHz",
+      "tx_power": "40dBm",
+      "beamforming": true,
+      "supported_splits": ["7-2x", "8"]
+    }
+  }
