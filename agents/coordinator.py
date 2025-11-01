@@ -12,8 +12,9 @@ class MultiAgentCoordinator:
     
     """Enhanced coordinator with MCP support"""
 
-    def __init__(self, use_mcp: bool = False):
+    def __init__(self, use_mcp: bool = False, demo_mode: bool = False):
         self.use_mcp = use_mcp
+        self.demo_mode = demo_mode
         
         self.ru_agent = create_ru_specialist()
         self.du_agent = create_du_specialist()
@@ -66,6 +67,9 @@ class MultiAgentCoordinator:
         return result
     
     def analyze_compatibility(self, odu_path: str, oru_path: str) -> Dict:
+        if self.demo_mode:
+            # Return pre-written summary
+            return self._get_demo_summary(odu_path, oru_path)
         """
         Multi-agent workflow for comprehensive compatibility analysis
         
